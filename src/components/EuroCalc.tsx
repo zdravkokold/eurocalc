@@ -49,16 +49,14 @@ export function EuroCalc() {
       {/* Background glow effect */}
       <div className="fixed inset-0 gradient-glow pointer-events-none" />
       
-      <div className="relative max-w-md mx-auto px-4 py-8 space-y-6">
-        {/* Header */}
-        <header className="text-center space-y-2 animate-fade-in">
+      <header className="text-center space-y-2 animate-fade-in">
           <h1 className="text-2xl font-bold text-foreground">
             Калкулатор за ресто
           </h1>
           <p className="text-sm text-muted-foreground">
             Преходен период EUR ↔ BGN • Курс: 1.95583
           </p>
-        </header>
+      </header>
 
         {/* Price Section */}
         <section className="space-y-3 animate-fade-in" style={{ animationDelay: "0.1s" }}>
