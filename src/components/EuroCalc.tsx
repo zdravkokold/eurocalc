@@ -52,10 +52,6 @@ export function EuroCalc() {
       <div className="relative max-w-md mx-auto px-4 py-8 space-y-6">
         {/* Header */}
         <header className="text-center space-y-2 animate-fade-in">
-          <div className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-eur/10 border border-eur/20">
-            <Calculator className="w-5 h-5 text-eur" />
-            <span className="text-sm font-semibold text-eur">EuroCalc</span>
-          </div>
           <h1 className="text-2xl font-bold text-foreground">
             Калкулатор за ресто
           </h1>
