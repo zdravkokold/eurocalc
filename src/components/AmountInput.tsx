@@ -20,7 +20,8 @@ export function AmountInput({
   className,
 }: AmountInputProps) {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const val = e.target.value;
+    // Replace comma with dot for decimal separator (iOS/Android keyboards)
+    const val = e.target.value.replace(",", ".");
     // Allow only numbers and one decimal point
     if (/^\d*\.?\d{0,2}$/.test(val) || val === "") {
       onChange(val);
