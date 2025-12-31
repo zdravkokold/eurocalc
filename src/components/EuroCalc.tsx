@@ -127,10 +127,18 @@ export function EuroCalc() {
 
         {/* Footer */}
         <footer className="text-center pt-4 animate-fade-in" style={{ animationDelay: "0.7s" }}>
-          <p className="text-xs text-muted-foreground/50">
-            Работи офлайн • Фиксиран курс 1 EUR = 1.95583 BGN
-          </p>
-        </footer>
+      <p className="text-xs text-muted-foreground/60">
+        Разработено от{" "}
+        <a 
+          href="https://www.linkedin.com/in/zdravkokold/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="font-medium hover:text-primary transition-colors underline underline-offset-2"
+        >
+          Здравко Колджиев
+        </a>
+      </p>
+    </footer>
       </div>
     </div>
   );
