@@ -9,7 +9,8 @@ export function QuickConverter() {
   const [fromEur, setFromEur] = useState(true);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const val = e.target.value;
+    // Replace comma with dot for decimal separator (iOS/Android keyboards)
+    const val = e.target.value.replace(",", ".");
     if (/^\d*\.?\d{0,2}$/.test(val) || val === "") {
       setAmount(val);
     }
